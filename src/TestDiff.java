@@ -33,8 +33,8 @@ public class TestDiff {
                 if (commitMsg.contains("Fix")|| commitMsg.contains("fix") || commitMsg.contains("bug")){
                     System.out.println(commit);
                     System.out.println(commitMsg);
-                    getDiff(commit);
-                   /* ObjectReader reader = repo.newObjectReader();
+                    //getDiff(commit);
+                    ObjectReader reader = repo.newObjectReader();
                     RevCommit parent = commit.getParent(0);
                     if (parent != null){
                         CanonicalTreeParser oldTreeIter = new CanonicalTreeParser();
@@ -50,7 +50,7 @@ public class TestDiff {
                         for (DiffEntry entry : entries){
                             System.out.println(entry.getNewPath());
                         }
-                    }*/
+                    }
 
                 }
             }
